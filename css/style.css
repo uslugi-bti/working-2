@@ -10,6 +10,10 @@
     --transition: all 0.3s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -116,8 +120,15 @@ body {
     text-align: center;
 }
 
+.button a {
+    text-decoration: none;
+}
+
 .button--primary {
     background-color: var(--primary-color);
+}
+
+.button--primary a {
     color: var(--white);
 }
 
@@ -129,21 +140,29 @@ body {
 
 .button--secondary {
     background-color: var(--white);
-    color: var(--primary-color);
     border: 2px solid var(--primary-color);
+}
+
+.button--secondary a {
+    color: var(--primary-color);
 }
 
 .button--secondary:hover {
     background-color: var(--primary-color);
-    color: var(--white);
     transform: translateY(-2px);
     box-shadow: var(--box-shadow);
+}
+.button--secondary:hover a {
+    color: var(--white);
 }
 
 .button--outline {
     background-color: transparent;
-    color: var(--primary-color);
     border: 2px solid var(--primary-color);
+}
+
+.button--outline a {
+    color: var(--primary-color);
 }
 
 .button--outline:hover {

@@ -11,76 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Vacancies data
-    const vacanciesData = [
-        {
-            title: 'Віртуальний асистент',
-            salary: '1200 UAH/день',
-            description: 'Допомагай підприємцям: пошта, календар, дзвінки.',
-            skills: 'Необхідні навички: організованість, базовий Office.'
-        },
-        {
-            title: 'Оператор введення даних',
-            salary: '1100 UAH/день',
-            description: 'Проста робота з таблицями, внесення інформації.',
-            skills: 'Необхідні навички: швидке друкування, Excel.'
-        },
-        {
-            title: 'Онлайн підтримка клієнтів',
-            salary: '1300 UAH/день',
-            description: 'Чати та пошта. Досвід не потрібен.',
-            skills: 'Необхідні навички: спілкування, терпіння.'
-        },
-        {
-            title: 'Контент-райтер',
-            salary: '1400 UAH/день',
-            description: 'Пиши статті й описи для сайтів.',
-            skills: 'Необхідні навички: грамотність, дослідження тем.'
-        },
-        {
-            title: 'SMM-асистент',
-            salary: '1500 UAH/день',
-            description: 'Веди соцмережі, створюй прості пости.',
-            skills: 'Необхідні навички: креативність, базові знання Instagram/TikTok.'
-        },
-        {
-            title: 'Асистент онлайн-магазину',
-            salary: '1250 UAH/день',
-            description: 'Додай товари, обробляй замовлення.',
-            skills: 'Необхідні навички: уважність, комп\'ютерна грамотність.'
-        },
-        {
-            title: 'Учасник онлайн-опитувань',
-            salary: '1000 UAH/день',
-            description: 'Відповідай на прості питання у вільний час.',
-            skills: 'Необхідні навички: інтернет, чесність.'
-        },
-        {
-            title: 'Віддалений адмін-асистент',
-            salary: '1350 UAH/день',
-            description: 'Файли, дзвінки, планування.',
-            skills: 'Необхідні навички: офісні програми, організація.'
-        }
-    ];
-    
-    // Generate vacancies
-    const vacanciesGrid = document.querySelector('.vacancies__grid');
-    
-    if (vacanciesGrid) {
-        vacanciesData.forEach(vacancy => {
-            const vacancyCard = document.createElement('div');
-            vacancyCard.className = 'vacancy-card fade-in-up';
-            vacancyCard.innerHTML = `
-                <h3 class="vacancy-card__title">${vacancy.title}</h3>
-                <div class="vacancy-card__salary">${vacancy.salary}</div>
-                <p class="vacancy-card__description">${vacancy.description}</p>
-                <p class="vacancy-card__skills">${vacancy.skills}</p>
-                <button class="button button--primary vacancy-card__button">Подати заявку</button>
-            `;
-            vacanciesGrid.appendChild(vacancyCard);
-        });
-    }
-    
     // FAQ accordion
     const faqItems = document.querySelectorAll('.faq__item');
     
@@ -150,30 +80,6 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(stat);
     });
     
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                if (menu && menu.classList.contains('active')) {
-                    burger.classList.remove('active');
-                    menu.classList.remove('active');
-                }
-            }
-        });
-    });
-    
     // Header scroll effect
     const header = document.querySelector('.header');
     
@@ -207,11 +113,6 @@ document.addEventListener('DOMContentLoaded', function() {
             setTimeout(() => {
                 ripple.remove();
             }, 600);
-            
-            // Handle specific button actions
-            if (this.textContent.includes('Подати заявку')) {
-                alert('Дякуємо за вашу заявку! Ми зв\'яжемося з вами найближчим часом.');
-            }
         });
     });
     
