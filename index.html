@@ -5,28 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkStart - Платформа для віддаленої роботи</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background Elements -->
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <div class="header__logo">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMCAxMFYzMEgzMFYxMEgxMFpNMTIgMTJIMjhWMjhIMTJWMTJaTTQwIDEwVjMwSDYwVjEwSDQwWk00MiAxMkg1OFYyOEg0MlYxMlpNNzAgMTBWMzBINzVWMjVINzBWMjJINzVWMTdINzBWMTBaTTgwIDEwVjMwSDg1VjE1SDkwVjMwSDk1VjEwSDgwWk0xMDAgMTBWMzBIMTA1VjE1SDExMFYzMEgxMTVWMTBIMTAwWk0xMjUgMTBWMzBIMTM1VjI1SDEzMFYxNUgxMzVWMTBIMTI1Wk0xMjUgMTdIMTMwVjIzSDEyNVYxN1pNMTQ1IDEwVjMwSDE1MFYxNUgxNTVWMzBIMTYwVjE1SDE2NVYzMEgxNzBWMTBIMTY1VjE1SDE2MFYxMEgxNTVWMTVIMTUwVjEwSDE0NVoiIGZpbGw9IiM0MTk0RjYiLz48L3N2Zz4=" alt="WorkStart Logo">
+                    <img src="img/download.svg" alt="WorkStart Logo">
                 </div>
                 <nav class="header__nav">
                     <ul class="header__menu">
-                        <li class="header__menu-item"><a href="#home" class="header__menu-link">Головна</a></li>
-                        <li class="header__menu-item"><a href="#vacancies" class="header__menu-link">Вакансії</a></li>
-                        <li class="header__menu-item"><a href="#how-it-works" class="header__menu-link">Як це працює</a></li>
-                        <li class="header__menu-item"><a href="#advantages" class="header__menu-link">Наші переваги</a></li>
-                        <li class="header__menu-item"><a href="#reviews" class="header__menu-link">Відгуки</a></li>
-                        <li class="header__menu-item"><a href="#faq" class="header__menu-link">FAQ</a></li>
-                        <li class="header__menu-item"><a href="telegram.html" class="header__menu-link">Контакти</a></li>
+                        <li class="header__menu-item"><a href="#home" class="header__menu-link"><i class="fas fa-home"></i> Головна</a></li>
+                        <li class="header__menu-item"><a href="#vacancies" class="header__menu-link"><i class="fas fa-briefcase"></i> Вакансії</a></li>
+                        <li class="header__menu-item"><a href="#how-it-works" class="header__menu-link"><i class="fas fa-cogs"></i> Як це працює</a></li>
+                        <li class="header__menu-item"><a href="#advantages" class="header__menu-link"><i class="fas fa-star"></i> Переваги</a></li>
+                        <li class="header__menu-item"><a href="#reviews" class="header__menu-link"><i class="fas fa-comments"></i> Відгуки</a></li>
+                        <li class="header__menu-item"><a href="#faq" class="header__menu-link"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li class="header__menu-item"><a href="telegram.html" class="header__menu-link"><i class="fas fa-paper-plane"></i> Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="header__button button button--primary">
-                    <a href="telegram.html">Подати заявку зараз</a>
+                <button class="header__button button button--primary glow-effect">
+                    <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
                 </button>
                 <div class="header__burger">
                     <span></span>
@@ -42,19 +51,48 @@
         <div class="container">
             <div class="hero__inner">
                 <div class="hero__content">
-                    <h1 class="hero__title">Платформа віддалених можливостей для новачків</h1>
+                    <div class="hero__badge">
+                        <span>🚀 Старт кар'єри онлайн</span>
+                    </div>
+                    <h1 class="hero__title">Платформа <span class="text-gradient">віддалених можливостей</span> для новачків</h1>
                     <p class="hero__text">Почни свій шлях до стабільного заробітку онлайн навіть без досвіду. Безкоштовне навчання + прості вакансії з гнучким графіком.</p>
                     <div class="hero__buttons">
-                        <button class="button button--primary">
-                            <a href="telegram.html">Почати навчання</a>
+                        <button class="button button--primary glow-effect">
+                            <a href="telegram.html"><i class="fas fa-rocket"></i> Почати навчання</a>
                         </button>
                         <button class="button button--secondary">
-                            <a href="#vacancies">Переглянути вакансії</a>
+                            <a href="#vacancies"><i class="fas fa-eye"></i> Переглянути вакансії</a>
                         </button>
+                    </div>
+                    <div class="hero__features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Безкоштовно</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <span>Гнучкий графік</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Навчання 1-3 дні</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero__image">
-                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDUwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNGMEY1RjgiLz48cGF0aCBkPSJNMzUwIDEwMEgxNTBWMzAwSDM1MFYxMDBaIiBmaWxsPSIjNDE5NEY2IiBmaWxsLW9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iODAiIGZpbGw9IiM0MTk0RjYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTE3MCAxNTBIMzMwVjI1MEgxNzBWMTUwWiIgZmlsbD0iIzQxOTRGNiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNGRkYiLz48L3N2Zz4=" alt="Remote Work Illustration">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-laptop"></i>
+                        <span>Робота з дому</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>1000-1800 UAH/день</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-users"></i>
+                        <span>Підтримка 24/7</span>
+                    </div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjQwMCIgdmlld0JveD0iMCAwIDUwMCA0MDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9IiNGMEY1RjgiLz48cGF0aCBkPSJNMzUwIDEwMEgxNTBWMzAwSDM1MFYxMDBaIiBmaWxsPSIjMDA3NmZmIiBmaWxsLW9wYWNpdHk9IjAuMSIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iODAiIGZpbGw9IiMwMDc2ZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PHBhdGggZD0iTTE3MCAxNTBIMzMwVjI1MEgxNzBWMTUwWiIgZmlsbD0iIzAwNzZmZiIvPjxjaXJjbGUgY3g9IjI1MCIgY3k9IjIwMCIgcj0iNDAiIGZpbGw9IiNGRkYiLz48L3N2Zz4=" alt="Remote Work Illustration">
                 </div>
             </div>
         </div>
@@ -65,135 +103,394 @@
         <div class="container">
             <div class="statistics__inner">
                 <div class="statistics__item">
-                    <div class="statistics__number" data-count="60">0</div>
+                    <div class="statistics__icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="statistics__number" data-count="40">0</div>
                     <div class="statistics__label">новачків успішно почали кар'єру онлайн</div>
                 </div>
                 <div class="statistics__item">
-                    <div class="statistics__number" data-count="98">0</div>
-                    <div class="statistics__label">студентів проходять навчання та отримують роботу</div>
+                    <div class="statistics__icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="statistics__number" data-count="100">0</div>
+                    <div class="statistics__label">студентів проходять навчання</div>
                 </div>
                 <div class="statistics__item">
                     <div class="statistics__icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M20 5L22.45 14.55L32 17L22.45 19.45L20 29L17.55 19.45L8 17L17.55 14.55L20 5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="statistics__label">безкоштовно: навчання та підтримка</div>
+                    <div class="statistics__number">4.9</div>
+                    <div class="statistics__label">середня оцінка платформи</div>
                 </div>
                 <div class="statistics__item">
-                    <div class="statistics__number">1000–1800</div>
-                    <div class="statistics__label">UAH/день середній дохід</div>
+                    <div class="statistics__icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="statistics__number">7+</div>
+                    <div class="statistics__label">років досвіду в галузі</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- New Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">Робота майбутнього <span class="text-gradient">вже сьогодні</span></h2>
+            <div class="info-section__content">
+                <div class="info-section__text">
+                    <div class="info-point">
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <h3>Швидкий старт</h3>
+                            <p>Почати можна вже сьогодні - навчання займає всього 1-3 дні, а перші завдання ви отримаєте одразу після підготовки.</p>
+                        </div>
+                    </div>
+                    <div class="info-point">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h3>Стабільний заробіток</h3>
+                            <p>Наші випускники заробляють від 1000 до 1800 гривень на день, працюючи у зручному для себе режимі.</p>
+                        </div>
+                    </div>
+                    <div class="info-point">
+                        <i class="fas fa-hands-helping"></i>
+                        <div>
+                            <h3>Постійна підтримка</h3>
+                            <p>Ми супроводжуємо кожного спеціаліста на всіх етапах - від навчання до виконання складних завдань.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-section__image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Команда працює разом онлайн">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vacancies Section -->
     <section id="vacancies" class="vacancies">
         <div class="container">
-            <h2 class="section-title">Популярні вакансії</h2>
+            <div class="section-header">
+                <h2 class="section-title">Популярні <span class="text-gradient">вакансії</span></h2>
+                <p class="section-subtitle">Оберіть напрям, який вас цікавить, і почніть заробляти вже завтра</p>
+            </div>
             <div class="vacancies__grid">
-                <div class="vacancy-card fade-in-up">
+                <div class="vacancy-card">
+                    <div class="vacancy-card__badge">Топ</div>
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Віртуальний асистент">
                     </div>
-                    <h3 class="vacancy-card__title">Віртуальний асистент</h3>
-                    <div class="vacancy-card__salary">1200 UAH/день</div>
-                    <p class="vacancy-card__description">Допомагай підприємцям: пошта, календар, дзвінки.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: організованість, базовий Office.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Віртуальний асистент</h3>
+                            <div class="vacancy-card__salary">1200 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Допомагай підприємцям: пошта, календар, дзвінки.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Організованість</span>
+                            <span class="skill-tag">Office</span>
+                            <span class="skill-tag">Комунікація</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Оператор введення даних">
                     </div>
-                    <h3 class="vacancy-card__title">Оператор введення даних</h3>
-                    <div class="vacancy-card__salary">1100 UAH/день</div>
-                    <p class="vacancy-card__description">Проста робота з таблицями, внесення інформації.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: швидке друкування, Excel.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Оператор введення даних</h3>
+                            <div class="vacancy-card__salary">1100 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Проста робота з таблицями, внесення інформації.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Швидкий друк</span>
+                            <span class="skill-tag">Excel</span>
+                            <span class="skill-tag">Уважність</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
+                    <div class="vacancy-card__badge">Нова</div>
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Онлайн підтримка клієнтів">
                     </div>
-                    <h3 class="vacancy-card__title">Онлайн підтримка клієнтів</h3>
-                    <div class="vacancy-card__salary">1300 UAH/день</div>
-                    <p class="vacancy-card__description">Чати та пошта. Досвід не потрібен.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: спілкування, терпіння.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Онлайн підтримка клієнтів</h3>
+                            <div class="vacancy-card__salary">1300 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Чати та пошта. Досвід не потрібен.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Спілкування</span>
+                            <span class="skill-tag">Терпіння</span>
+                            <span class="skill-tag">Відповідальність</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Контент-райтер">
                     </div>
-                    <h3 class="vacancy-card__title">Контент-райтер</h3>
-                    <div class="vacancy-card__salary">1400 UAH/день</div>
-                    <p class="vacancy-card__description">Пиши статті й описи для сайтів.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: грамотність, дослідження тем.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Контент-райтер</h3>
+                            <div class="vacancy-card__salary">1400 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Пиши статті й описи для сайтів.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Грамотність</span>
+                            <span class="skill-tag">Дослідження</span>
+                            <span class="skill-tag">Творчість</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
+                    <div class="vacancy-card__badge">Популярна</div>
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="SMM-асистент">
                     </div>
-                    <h3 class="vacancy-card__title">SMM-асистент</h3>
-                    <div class="vacancy-card__salary">1500 UAH/день</div>
-                    <p class="vacancy-card__description">Веди соцмережі, створюй прості пости.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: креативність, базові знання Instagram/TikTok.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">SMM-асистент</h3>
+                            <div class="vacancy-card__salary">1500 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Веди соцмережі, створюй прості пости.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Креативність</span>
+                            <span class="skill-tag">Instagram</span>
+                            <span class="skill-tag">TikTok</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1563013541-2dcc5ea5d58e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Асистент онлайн-магазину">
                     </div>
-                    <h3 class="vacancy-card__title">Асистент онлайн-магазину</h3>
-                    <div class="vacancy-card__salary">1250 UAH/день</div>
-                    <p class="vacancy-card__description">Додай товари, обробляй замовлення.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: уважність, комп'ютерна грамотність.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Асистент онлайн-магазину</h3>
+                            <div class="vacancy-card__salary">1250 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Додай товари, обробляй замовлення.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Уважність</span>
+                            <span class="skill-tag">Грамотність</span>
+                            <span class="skill-tag">Швидкість</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Учасник онлайн-опитувань">
                     </div>
-                    <h3 class="vacancy-card__title">Учасник онлайн-опитувань</h3>
-                    <div class="vacancy-card__salary">1000 UAH/день</div>
-                    <p class="vacancy-card__description">Відповідай на прості питання у вільний час.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: інтернет, чесність.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Учасник онлайн-опитувань</h3>
+                            <div class="vacancy-card__salary">1000 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Відповідай на прості питання у вільний час.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Інтернет</span>
+                            <span class="skill-tag">Чесність</span>
+                            <span class="skill-tag">Відповіді</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Вільний графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
-                
-                <div class="vacancy-card fade-in-up">
+
+                <div class="vacancy-card">
                     <div class="vacancy-card__image">
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Віддалений адмін-асистент">
                     </div>
-                    <h3 class="vacancy-card__title">Віддалений адмін-асистент</h3>
-                    <div class="vacancy-card__salary">1350 UAH/день</div>
-                    <p class="vacancy-card__description">Файли, дзвінки, планування.</p>
-                    <p class="vacancy-card__skills">Необхідні навички: офісні програми, організація.</p>
-                    <button class="button button--primary vacancy-card__button">
-                        <a href="telegram.html">Подати заявку</a>
-                    </button>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Віддалений адмін-асистент</h3>
+                            <div class="vacancy-card__salary">1350 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Файли, дзвінки, планування.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Офісні програми</span>
+                            <span class="skill-tag">Організація</span>
+                            <span class="skill-tag">Планування</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vacancy-card">
+                    <div class="vacancy-card__badge">Нова</div>
+                    <div class="vacancy-card__image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Тестувальник програмного забезпечення">
+                    </div>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Тестувальник ПЗ</h3>
+                            <div class="vacancy-card__salary">1450 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Тестуй веб-сайти та додатки, знаходь помилки.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Уважність</span>
+                            <span class="skill-tag">Логіка</span>
+                            <span class="skill-tag">Тестування</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Гнучкий графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="vacancy-card">
+                    <div class="vacancy-card__image">
+                        <img src="https://images.unsplash.com/photo-1590650516494-0c8e4a4dd61b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Транскрибатор">
+                    </div>
+                    <div class="vacancy-card__content">
+                        <div class="vacancy-card__header">
+                            <h3 class="vacancy-card__title">Транскрибатор</h3>
+                            <div class="vacancy-card__salary">1050 UAH/день</div>
+                        </div>
+                        <p class="vacancy-card__description">Перетворюй аудіо та відео в текст.</p>
+                        <div class="vacancy-card__skills">
+                            <span class="skill-tag">Слух</span>
+                            <span class="skill-tag">Грамотність</span>
+                            <span class="skill-tag">Швидкість</span>
+                        </div>
+                        <div class="vacancy-card__meta">
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Вільний графік</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-laptop"></i>
+                                <span>Віддалено</span>
+                            </div>
+                        </div>
+                        <button class="button button--primary vacancy-card__button glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Подати заявку</a>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -202,22 +499,31 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2 class="section-title">Як це працює</h2>
+            <h2 class="section-title">Як це <span class="text-gradient">працює</span></h2>
             <div class="how-it-works__steps">
                 <div class="how-it-works__step">
+                    <div class="step__icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
                     <div class="how-it-works__number">1</div>
                     <h3 class="how-it-works__title">Подай заявку</h3>
-                    <p class="how-it-works__text">Обирай вакансії, які тобі цікаві.</p>
+                    <p class="how-it-works__text">Обирай вакансії, які тобі цікаві та подавай заявку через Telegram.</p>
                 </div>
                 <div class="how-it-works__step">
+                    <div class="step__icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
                     <div class="how-it-works__number">2</div>
                     <h3 class="how-it-works__title">Отримай навчання</h3>
-                    <p class="how-it-works__text">Ми навчимо базовим навичкам. 1–3 дні підготовки.</p>
+                    <p class="how-it-works__text">Ми навчимо базовим навичкам. 1–3 дні підготовки з куратором.</p>
                 </div>
                 <div class="how-it-works__step">
+                    <div class="step__icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
                     <div class="how-it-works__number">3</div>
                     <h3 class="how-it-works__title">Почни заробляти</h3>
-                    <p class="how-it-works__text">Робота з дому + 1000–1800 UAH/день.</p>
+                    <p class="how-it-works__text">Робота з дому + 1000–1800 UAH/день. Перші гроші вже через тиждень.</p>
                 </div>
             </div>
         </div>
@@ -226,52 +532,49 @@
     <!-- Advantages Section -->
     <section id="advantages" class="advantages">
         <div class="container">
-            <h2 class="section-title">Чому варто обрати віддалену роботу</h2>
+            <h2 class="section-title">Чому варто обрати <span class="text-gradient">віддалену роботу</span></h2>
             <div class="advantages__grid">
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 5L27.5 15H37.5L29.5 21L32 31L25 25L18 31L20.5 21L12.5 15H22.5L25 5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-clock"></i>
                     </div>
                     <h3 class="advantages__title">Гнучкий графік</h3>
-                    <p class="advantages__text">Працюй у зручний час</p>
+                    <p class="advantages__text">Працюй у зручний для себе час, без жорстких рамок</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 5C13.95 5 5 13.95 5 25C5 36.05 13.95 45 25 45C36.05 45 45 36.05 45 25C45 13.95 36.05 5 25 5ZM25 42.5C15.35 42.5 7.5 34.65 7.5 25C7.5 15.35 15.35 7.5 25 7.5C34.65 7.5 42.5 15.35 42.5 25C42.5 34.65 34.65 42.5 25 42.5ZM27.5 12.5H22.5V27.5H32.5V22.5H27.5V12.5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
                     <h3 class="advantages__title">Економія</h3>
-                    <p class="advantages__text">Ніяких доріг, транспортних витрат</p>
+                    <p class="advantages__text">Ніяких доріг, транспортних витрат та обідів у кафе</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M40 15H35V10H15V15H10V40H40V15ZM17.5 12.5H32.5V15H17.5V12.5ZM37.5 37.5H12.5V17.5H17.5V22.5H32.5V17.5H37.5V37.5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-chart-line"></i>
                     </div>
                     <h3 class="advantages__title">Зростаюча галузь</h3>
-                    <p class="advantages__text">Попит на онлайн-працівників росте щороку</p>
+                    <p class="advantages__text">Попит на онлайн-працівників зростає щороку на 25%</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M42.5 7.5H7.5C5.85 7.5 4.5 8.85 4.5 10.5V39.5C4.5 41.15 5.85 42.5 7.5 42.5H42.5C44.15 42.5 45.5 41.15 45.5 39.5V10.5C45.5 8.85 44.15 7.5 42.5 7.5ZM42.5 39.5H7.5V10.5H42.5V39.5ZM15 32.5H35V35H15V32.5ZM15 25H35V27.5H15V25ZM15 17.5H35V20H15V17.5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-laptop"></i>
                     </div>
                     <h3 class="advantages__title">Прості інструменти</h3>
-                    <p class="advantages__text">Zoom, Google Docs, месенджери</p>
+                    <p class="advantages__text">Zoom, Google Docs, месенджери - все знайоме та доступне</p>
                 </div>
                 <div class="advantages__item">
                     <div class="advantages__icon">
-                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M25 5C14.5 5 6 13.5 6 24C6 34.5 14.5 43 25 43C35.5 43 44 34.5 44 24C44 13.5 35.5 5 25 5ZM25 40C16.45 40 9.5 33.05 9.5 24.5C9.5 15.95 16.45 9 25 9C33.55 9 40.5 15.95 40.5 24.5C40.5 33.05 33.55 40 25 40ZM32.5 22.5H27.5V17.5H22.5V22.5H17.5L25 29.5L32.5 22.5Z" fill="#4194F6"/>
-                        </svg>
+                        <i class="fas fa-globe"></i>
                     </div>
                     <h3 class="advantages__title">Працюй звідки завгодно</h3>
-                    <p class="advantages__text">Дім, кафе чи подорож</p>
+                    <p class="advantages__text">Дім, кафе, подорож чи заміський будинок - ти обираєш</p>
+                </div>
+                <div class="advantages__item">
+                    <div class="advantages__icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3 class="advantages__title">Work-life баланс</h3>
+                    <p class="advantages__text">Більше часу для сім'ї, хобі та особистого розвитку</p>
                 </div>
             </div>
         </div>
@@ -280,10 +583,17 @@
     <!-- Reviews Section -->
     <section id="reviews" class="reviews">
         <div class="container">
-            <h2 class="section-title">Відгуки студентів</h2>
+            <h2 class="section-title">Відгуки <span class="text-gradient">студентів</span></h2>
             <div class="reviews__slider">
                 <div class="reviews__item">
                     <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                         <p class="reviews__text">"Я боялася, що не впораюсь без досвіду, але навчання зайняло 2 дні. Тепер заробляю з дому і маю час на сім'ю."</p>
                         <div class="reviews__author">
                             <div class="reviews__name">Софія</div>
@@ -293,6 +603,13 @@
                 </div>
                 <div class="reviews__item">
                     <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                         <p class="reviews__text">"Нарешті маю свободу. Не витрачаю години в маршрутках, заробляю вдома. Робота простіша, ніж очікував."</p>
                         <div class="reviews__author">
                             <div class="reviews__name">Максим</div>
@@ -302,6 +619,13 @@
                 </div>
                 <div class="reviews__item">
                     <div class="reviews__content">
+                        <div class="reviews__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                         <p class="reviews__text">"Люблю писати і знайшла тут спосіб робити це за гроші. Навчання допомогло з базовою структурою текстів."</p>
                         <div class="reviews__author">
                             <div class="reviews__name">Аліна</div>
@@ -316,132 +640,160 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">Часті запитання</h2>
+            <h2 class="section-title">Часті <span class="text-gradient">запитання</span></h2>
             <div class="faq__items">
                 <div class="faq__item">
                     <div class="faq__question">
                         <span>Чи можу працювати без досвіду?</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 15V5M5 10H15" stroke="#4194F6" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq__answer">
-                        <p>Так, всі вакансії для новачків.</p>
+                        <p>Так, всі вакансії розраховані на новачків. Ми надаємо повне навчання та підтримку.</p>
                     </div>
                 </div>
                 <div class="faq__item">
                     <div class="faq__question">
                         <span>Скільки реально заробляти?</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 15V5M5 10H15" stroke="#4194F6" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq__answer">
-                        <p>1000–1800 грн/день.</p>
+                        <p>Від 1000 до 1800 гривень на день, залежно від вакансії та вашого досвіду.</p>
                     </div>
                 </div>
                 <div class="faq__item">
                     <div class="faq__question">
                         <span>Що потрібно для старту?</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 15V5M5 10H15" stroke="#4194F6" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq__answer">
-                        <p>Комп'ютер/ноутбук, інтернет.</p>
+                        <p>Комп'ютер/ноутбук та стабільний інтернет. Смартфон також підійде для деяких вакансій.</p>
+                    </div>
+                </div>
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <span>Чи можна поєднувати з навчанням?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Так, гнучкий графік дозволяє поєднувати роботу з навчанням у ВНЗ чи школі.</p>
                     </div>
                 </div>
                 <div class="faq__item">
                     <div class="faq__question">
                         <span>Чи є контракт чи зобов'язання?</span>
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 15V5M5 10H15" stroke="#4194F6" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq__answer">
-                        <p>Ні, ти обираєш формат роботи сам.</p>
+                        <p>Ні, ви можете працювати без тривалих зобов'язань та змінювати вакансії.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- CTA Section -->
     <section class="cta">
         <div class="container">
             <div class="cta__inner">
                 <div class="cta__content">
-                    <h2 class="cta__title">Готовий почати кар'єру з дому?</h2>
-                    <p class="cta__text">Приєднуйся до тисяч українців, які вже заробляють онлайн.</p>
+                    <h2 class="cta__title">Готовий почати <span class="text-gradient">кар'єру</span> онлайн?</h2>
+                    <p class="cta__text">Приєднуйся до 100+ студентів, які вже заробляють з дому. Обери вакансію, пройди навчання та почни заробляти вже через тиждень!</p>
+                    <div class="cta__features">
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Безкоштовне навчання</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Гарантія роботи</span>
+                        </div>
+                        <div class="cta-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Підтримка 24/7</span>
+                        </div>
+                    </div>
                     <div class="cta__buttons">
-                        <button class="button button--primary">
-                            <a href="telegram.html">Почати сьогодні</a>
+                        <button class="button button--primary glow-effect">
+                            <a href="telegram.html"><i class="fab fa-telegram"></i> Почати зараз</a>
                         </button>
                         <button class="button button--secondary">
-                            <a href="telegram.html">Отримати допомогу</a>
+                            <a href="#vacancies"><i class="fas fa-comments"></i> Консультація</a>
                         </button>
                     </div>
                 </div>
                 <div class="cta__image">
-                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Людина працює за ноутбуком на природі">
+                    <div class="cta-card">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Швидкий старт</h4>
+                        <p>Перші завдання вже через 3 дні</p>
+                    </div>
+                    <div class="cta-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Надійно</h4>
+                        <p>Офіційне працевлаштування</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Enhanced Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                <div class="footer__section">
-                    <div class="footer__logo">
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMCAxMFYzMEgzMFYxMEgxMFpNMTIgMTJIMjhWMjhIMTJWMTJaTTQwIDEwVjMwSDYwVjEwSDQwWk00MiAxMkg1OFYyOEg0MlYxMlpNNzAgMTBWMzBINzVWMjVINzBWMjJINzVWMTdINzBWMTBaTTgwIDEwVjMwSDg1VjE1SDkwVjMwSDk1VjEwSDgwWk0xMDAgMTBWMzBIMTA1VjE1SDExMFYzMEgxMTVWMTBIMTAwWk0xMjUgMTBWMzBIMTM1VjI1SDEzMFYxNUgxMzVWMTBIMTI1Wk0xMjUgMTdIMTMwVjIzSDEyNVYxN1pNMTQ1IDEwVjMwSDE1MFYxNUgxNTVWMzBIMTYwVjE1SDE2NVYzMEgxNzBWMTBIMTY1VjE1SDE2MFYxMEgxNTVWMTVIMTUwVjEwSDE0NVoiIGZpbGw9IiNGRkYiLz48L3N2Zz4=" alt="WorkStart Logo">
-                    </div>
-                    <p class="footer__description">WorkStart – Відкрий двері у світ віддаленої роботи.</p>
-                    <div class="footer__contact">
-                        <div class="footer__contact-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M18.3333 3.33334C18.3333 2.41667 17.5833 1.66667 16.6667 1.66667H3.33333C2.41667 1.66667 1.66667 2.41667 1.66667 3.33334V16.6667C1.66667 17.5833 2.41667 18.3333 3.33333 18.3333H16.6667C17.5833 18.3333 18.3333 17.5833 18.3333 16.6667V3.33334ZM16.6667 3.33334L10 8.75L3.33333 3.33334H16.6667ZM16.6667 16.6667H3.33333V5.00001L10 10.4167L16.6667 5.00001V16.6667Z" fill="white"/>
-                            </svg>
-                            <span>support@workstart.com</span>
+                <div class="footer__main">
+                    <div class="footer__brand">
+                        <div class="footer__logo">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTUwIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMCAxMFYzMEgzMFYxMEgxMFpNMTIgMTJIMjhWMjhIMTJWMTJaTTQwIDEwVjMwSDYwVjEwSDQwWk00MiAxMkg1OFYyOEg0MlYxMlpNNzAgMTBWMzBINzVWMjVINzBWMjJINzVWMTdINzBWMTBaTTgwIDEwVjMwSDg1VjE1SDkwVjMwSDk1VjEwSDgwWk0xMDAgMTBWMzBIMTA1VjE1SDExMFYzMEgxMTVWMTBIMTAwWk0xMjUgMTBWMzBIMTM1VjI1SDEzMFYxNUgxMzVWMTBIMTI1Wk0xMjUgMTdIMTMwVjIzSDEyNVYxN1pNMTQ1IDEwVjMwSDE1MFYxNUgxNTVWMzBIMTYwVjE1SDE2NVYzMEgxNzBWMTBIMTY1VjE1SDE2MFYxMEgxNTVWMTVIMTUwVjEwSDE0NVoiIGZpbGw9IiMwMDc2ZmYiLz48L3N2Zz4=" alt="WorkStart Logo">
                         </div>
-                        <div class="footer__contact-item">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10 1.66667C5.4 1.66667 1.66667 5.4 1.66667 10C1.66667 14.6 5.4 18.3333 10 18.3333C14.6 18.3333 18.3333 14.6 18.3333 10C18.3333 5.4 14.6 1.66667 10 1.66667ZM10 16.6667C6.325 16.6667 3.33333 13.675 3.33333 10C3.33333 6.325 6.325 3.33334 10 3.33334C13.675 3.33334 16.6667 6.325 16.6667 10C16.6667 13.675 13.675 16.6667 10 16.6667Z" fill="white"/>
-                                <path d="M10.8333 5.83334H9.16667V10.8333H13.3333V9.16667H10.8333V5.83334Z" fill="white"/>
-                            </svg>
-                            <span>вул. Хрещатик, 22, Київ, Україна</span>
+                        <p class="footer__description">WorkStart – відкрий двері у світ віддаленої роботи. Починай кар'єру вже сьогодні!</p>
+                        <div class="footer__social">
+                            <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         </div>
                     </div>
+                    <div class="footer__links">
+                        <div class="footer__column">
+                            <h4>Вакансії</h4>
+                            <a href="#vacancies">Віртуальний асистент</a>
+                            <a href="#vacancies">Оператор даних</a>
+                            <a href="#vacancies">Онлайн підтримка</a>
+                            <a href="#vacancies">Контент-райтер</a>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Підтримка</h4>
+                            <a href="telegram.html">Контакти</a>
+                            <a href="#faq">FAQ</a>
+                            <a href="telegram.html">Допомога</a>
+                            <a href="#how-it-works">Як це працює</a>
+                        </div>
+                        <div class="footer__column">
+                            <h4>Компанія</h4>
+                            <a href="#home">Про нас</a>
+                            <a href="#advantages">Переваги</a>
+                            <a href="#reviews">Відгуки</a>
+                            <a href="#faq">Питання</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">Посади</h3>
-                    <ul class="footer__list">
-                        <li><a href="telegram.html">Віртуальний асистент</a></li>
-                        <li><a href="telegram.html">Оператор даних</a></li>
-                        <li><a href="telegram.html">Контент-райтер</a></li>
-                        <li><a href="telegram.html">Онлайн підтримка</a></li>
-                        <li><a href="telegram.html">SMM</a></li>
-                    </ul>
-                </div>
-                <div class="footer__section">
-                    <h3 class="footer__title">Швидкі посилання</h3>
-                    <ul class="footer__list">
-                        <li><a href="#">Подати заявку</a></li>
-                        <li><a href="#how-it-works">Як це працює</a></li>
-                        <li><a href="#reviews">Відгуки</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__copyright">© 2025 WorkStart. Всі права захищені.</div>
-                <div class="footer__links">
-                    <a href="#">Політика конфіденційності</a>
-                    <a href="#">Умови використання</a>
+                <div class="footer__bottom">
+                    <div class="footer__copyright">
+                        &copy; 2024 WorkStart. Всі права захищені.
+                    </div>
+                    <div class="footer__badge">
+                        <i class="fas fa-heart"></i>
+                        <span>Зроблено з любов'ю до України</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
