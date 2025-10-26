@@ -349,6 +349,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero__image {
     position: relative;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
 }
 
 .hero__image img {
@@ -744,6 +747,11 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: var(--shadow-hover);
 }
 
+.advantages__item:last-child,
+.advantages__item:nth-child(5) {
+    grid-column: span 2;
+}
+
 .advantages__icon {
     font-size: 3rem;
     color: var(--primary-color);
@@ -949,6 +957,20 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+}
+
+.cta__buttons .glow-effect {
+    background-color: #f1f1f1;
+}
+
+.cta__buttons .glow-effect a {
+    color: #0076ff;
+}
+
+.cta__buttons .button--secondary,
+.cta__buttons .button--secondary a {
+    border-color: #f1f1f1;
+    color: #f1f1f1;
 }
 
 .cta__image {
