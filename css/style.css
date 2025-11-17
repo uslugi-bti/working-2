@@ -192,12 +192,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Glow Effects */
-.glow-effect {
+.glow-effect a {
     position: relative;
     overflow: hidden;
 }
 
-.glow-effect::before {
+.glow-effect a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -208,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: var(--transition);
 }
 
-.glow-effect:hover::before {
+.glow-effect a:hover::before {
     left: 100%;
 }
 
@@ -988,7 +988,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
 }
 
-.cta__buttons .glow-effect {
+.cta__buttons .glow-effect a {
     background-color: #f1f1f1;
 }
 
