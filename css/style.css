@@ -23,6 +23,14 @@
     box-sizing: border-box;
 }
 
+button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    outline: none;
+}
+
 body {
     font-family: 'Inter', 'Arial', sans-serif;
     line-height: 1.6;
@@ -124,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Buttons */
-.button {
+.button a {
     display: inline-block;
     padding: 12px 24px;
     border-radius: 8px;
@@ -140,30 +148,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .button--primary {
-    background-color: var(--primary-color);
     color: white;
 }
 
-.button--primary:hover {
+.button--primary a {
+    background-color: var(--primary-color);
+}
+
+.button--primary a:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
 
 .button--secondary {
-    background-color: transparent;
     color: var(--primary-color);
+}
+
+.button--secondary a {
+    background-color: transparent;
     border: 2px solid var(--primary-color);
 }
 
 .button--secondary:hover {
-    background-color: var(--primary-color);
     color: white;
+}
+
+.button--secondary a:hover {
+    background-color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
 
-.button--large {
+.button--large a {
     padding: 16px 32px;
     font-size: 1.1rem;
 }
@@ -261,7 +278,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.header__button {
+.header__button a {
     padding: 10px 20px;
 }
 
@@ -665,7 +682,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.8rem;
 }
 
-.vacancy-card__button {
+.vacancy-card__button a {
     margin-top: auto;
     width: 100%;
 }
